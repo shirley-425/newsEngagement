@@ -1,12 +1,36 @@
 {
+  "name": "twitter-experiment",
+  "version": "1.0.0",
+  "source": "src/index.html",
   "scripts": {
-    "test": "jest"
+    "start": "parcel src/index.html --port 3000",
+    "build": "parcel build src/index.html",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "babel-jest": "^27.2.4",
-    "jest": "^27.2.4"
+    "@parcel/transformer-postcss": "^2.10.0",
+    "@parcel/transformer-react-refresh-wrap": "^2.10.0",
+    "@parcel/transformer-typescript-tsc": "^2.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.17",
+    "parcel": "^2.10.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.0.0"
   },
-  "dependencies": {}
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "alias": {
+    "process": {
+      "global": "{}"
+    }
+  }
 }
